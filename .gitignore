@@ -1,0 +1,44 @@
+# Built application files
+*.apk
+*.aab
+*.ap_
+*.dex
+*.idsig
+
+# Gradle build files
+.gradle/
+build/
+*/build/
+module/app/build/
+module/xposed-stubs/build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log files
+*.log
+
+# Android Studio / IntelliJ IDEA
+.idea/
+*.iml
+.navigation/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Secrets & Keystores (CRITICAL)
+*.jks
+*.keystore
+*.pass*
+*.dpapi
+*.pem
+*.key
+
+# Temporary artifacts & local screenshots
+outputs/*.png
+work/
+release/

@@ -1,0 +1,27 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'io.github.borey.recorderautotranscribe'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'io.github.borey.recorderautotranscribe'
+        minSdk 29
+        targetSdk 34
+        versionCode 24
+        versionName '1.4.5'
+    }
+
+    testOptions { unitTests.returnDefaultValues = true }
+    buildFeatures { buildConfig true }
+    buildTypes {
+        // Public artifacts are signed outside the repository with the dedicated release key.
+        // Keeping this output unsigned prevents an accidental debug-signed "release" APK.
+        release { }
+    }
+}
+
+dependencies {
+    compileOnly project(':xposed-stubs')
+    testImplementation 'junit:junit:4.13.2'
+}
